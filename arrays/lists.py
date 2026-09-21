@@ -7,7 +7,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newList = None
+newList = ["Brentford", "Brighton", "Bournemout"]
 
 ########################################################################
 
@@ -31,7 +31,8 @@ appendElement = "ok?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-listCopy = None
+listCopy = list1.copy()
+listCopy.append(appendElement)
 
 ########################################################################
 
@@ -55,7 +56,11 @@ cycleMeCopy = list(cycleMe)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
+first = cycleMe.pop(0)
+cycleMe.append(first)
 
+second = cycleMe.pop(0)
+cycleMe.append(second)
 
 ########################################################################
 
@@ -74,6 +79,8 @@ keepMe = clearJustMe
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
+keepMe = clearJustMe
+clearJustMe = []
 
 
 ########################################################################
@@ -93,7 +100,8 @@ loseMe = clearAll
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearAll = loseMe
+clearAll.clear()
 
 ########################################################################
 
@@ -111,7 +119,7 @@ allScoresCopy = list(allScores)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-top3Scores = None
+top3Scores = sorted(allScores, reverse=True)[:3]
 
 ########################################################################
 
